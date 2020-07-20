@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 .header{
-    max-width: 2004px;
+    max-width: 100%;
     height: 150px;
     background-color: #cc3333;
 }
@@ -25,6 +25,9 @@
 }
 .logos {
     padding-top: 39px;
+}
+.logos img {
+    margin-right: 15px;
 }
 .header__text{
     padding-top: 38px;
@@ -50,7 +53,7 @@
 }
 .fa-shopping-cart {
     color: #fff;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .header__rightbar-cartlang a {
     color: #fff;
