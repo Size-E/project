@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'astra-reg';
+    src: url('fonts/PT Astra Sans_Regular.ttf');
+    font-weight: 400;
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    max-width: 2004px;
+    height: 150px;
+    background-color: #cc3333;
+}
+.container{
+    max-width: 100%;
+    padding: 0 200px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.logos {
+    padding-top: 39px;
+}
+.header__text{
+    padding-top: 38px;
+    width: 300px;
+    height: 10px;
+    color: #ffffff;
+    font-family: "astra-reg";
+}
+.header__text p {
+    font-size: 12px;
+}
+.header__text h3 {
+    text-transform: uppercase;
+    width: 400px;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+.header__rightbar {
+    padding-top: 16px;
+}
+.header__rightbar-cartlang {
+    display: flex;
+}
+.fa-shopping-cart {
+    color: #fff;
+    margin-right: 10px;
+}
+.header__rightbar-cartlang a {
+    color: #fff;
+    font-family: "astra-reg";
+    margin-right: 5px;
+}
+.header__rightbar-cartlang a.active {
+    color: #fff;
+    opacity: 0.25;
+}
+.header__rightbar-auth{
+    display: flex;
+}
+.header__rightbar-auth a{ 
+    font-family: "astra-reg";
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.enter {
+    margin-right: 10px;
+}
+.sign-up {
+    border: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    font-family: "astra-reg";
+    color: #fff;
+    background: none;
+    padding: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
