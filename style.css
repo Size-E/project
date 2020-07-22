@@ -415,6 +415,159 @@
     font-weight: 400;
     line-height: 25px;
 }
+/* **************************************** LAST RELEASE ****************************** */
+.last-release {
+    max-width: 100%;
+    height: 700px;
+    background-color: #cc3333;
+}
 
-
-
+.last-release h6{
+    color: #ffffff;
+    font-family: "astra-reg";
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 70px;
+    margin-left: 433px;
+}
+.last-release-items {
+    padding: 0 350px;
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+.last-release-item p{
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 22px;
+    font-weight: 400;
+    font-family: "astra-reg";
+    margin-bottom: 40px;
+}
+.last-release-item button{
+    color: #fffefe;
+    background: #000;
+    cursor: pointer;
+    width: 180px;
+    height: 44px;
+    border: none;
+    outline: none;
+    font-family: "astra-reg";
+    margin-bottom: 55px;
+}
+.last-release .archive a{
+    color: #ffffff;
+    font-family: "astra-reg";
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding-left: 350px;
+}
+/* ***************************************** CONTACTS ****************************** */
+.contacts {
+    padding: 90px 350px;
+}
+.contacts h5{
+    color: #cc3333;
+    font-family: "astra-reg";
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.addres {
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+}
+.addres h6 {
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "astra-reg";
+}
+.addres p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "astra-reg";
+}
+.addres a {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "astra-reg";
+    text-decoration: underline;
+    color:#0096e1;
+}
+.map {
+    width: 805px;
+    height: 408px;
+    margin-top: 62px;
+}
+.map iframe {
+    width: 805px;
+    height: 408px;
+    border: none;
+    display: flex;
+}
+/* ********************************** FOOTER ****************************** */
+.footer {
+    width: 100%;
+    height: 310px;
+    padding: 41px 100px 0px 100px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.left-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+}
+.footer-menu {
+    display: flex;
+}
+.menu-1 li {
+    margin-right: 85px;
+    line-height: 35px;
+    width: 100px;
+}
+.menu-2 li{
+    margin-right: 85px;
+    line-height: 35px;
+    width: 150px;
+}
+.menu-1 li a, .menu-2 li a{
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "astra-reg";
+}
+.footer-icons ul {
+    display: flex;
+}
+.footer-icons li a {
+    font-size: 21px;
+    color: #cc3333;
+    margin-right: 19px;
+}
+.right-footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer-text {
+    width: auto;
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "astra-reg";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 31px;
+}
+.copyright {
+    height: 11px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "astra-reg";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
