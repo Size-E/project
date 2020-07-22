@@ -2,7 +2,12 @@
     font-family: 'astra-reg';
     src: url('fonts/PT Astra Sans_Regular.ttf');
     font-weight: 400;
- }
+}
+@font-face {
+    font-family: 'adver-reg';
+    src: url('fonts/adver-gothic_[allfont.ru].ttf');
+    font-weight: 400;
+}
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +15,7 @@
     list-style: none;
     text-decoration: none;
 }
+/* ******************************************* Menu ****************************************** */
 .header{
     max-width: 100%;
     height: 150px;
@@ -17,14 +23,16 @@
 }
 .container{
     max-width: 100%;
-    padding: 0 200px;
+    padding: 0 100px;
+    height: auto;
 }
-.header__inner {
+.menu__inner {
     display: flex;
     justify-content: space-between;
 }
 .logos {
     padding-top: 39px;
+    margin-left: 20px;
 }
 .logos img {
     margin-right: 15px;
@@ -89,3 +97,324 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+/* ******************************************** SIDEBAR MENU *******************************/
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-menu-inner {
+    background-color: #f4f2f2;
+    width: 273px;
+    max-height: 860px;
+    padding: 40px 92px 30px 30px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+.faq {
+    max-width: 500px;
+    margin: 20px auto;
+}
+.faq-item {
+    margin-bottom: 36px;
+    width: 200px;
+}
+.faq-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "astra-reg";
+}
+.faq-title::after{
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    transform: translateY(-50%);
+}
+
+.faq-input:checked ~ .faq-title::after{
+    border-style: solid;
+    border-width: 0px 5px 8px 5px;
+    border-color:  transparent transparent rgb(0, 0, 0) transparent;
+}
+.faq-input:checked ~ .faq-text {
+    display: block;
+}
+
+.faq-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.faq-text {
+    display: none;
+}
+.faq-text ul {
+    list-style: none;
+    padding: 0;
+}
+.faq-text li {
+    margin-bottom: 10px;
+}
+.faq-text li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: "astra-reg";
+}
+.faq-text li a:hover {
+    color: rgb(139, 79, 79);
+}
+/* *************************************** SIDEBAR MENU *********************************** */
+.content__sidemenu-bottom {
+    width: 200px;
+    height: 110px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+.content__sidemenu-bottom li a{
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "astra-reg";
+    font-size: 16px;
+    font-weight: 600;
+}
+/* ************************************** SOCIAL ICONS ********************************** */
+.content__sidebar-icons ul{
+    display: flex;
+    margin-bottom: 42px;
+}
+.content__sidebar-icons li{
+    margin-right: 19px;
+}
+.content__sidebar-icons li a{
+    font-size: 18px;
+    color: #cc3333; 
+}
+/* *************************************** SIDEBAR SEARCH ********************************** */
+.content__sidebar-search {
+    display: flex;
+    margin-left: -10px;
+}
+.content__sidebar-search .search{
+    width: 190px;
+    height: 49px;
+    font-size: 15px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    outline: none;
+    padding-left: 15px;
+    border: none
+}
+.content__sidebar-search button {
+    padding: 14px;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.search[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.search[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+.search[type="search"]::-webkit-search-decoration,
+.search[type="search"]::-webkit-search-cancel-button,
+.search[type="search"]::-webkit-search-results-button,
+.search[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* ********************************** SIDEBAR NEWS ****************************** */
+
+.content__sidebar-news {
+    display: flex;
+    flex-direction: column;
+}
+.content__sidebar-news h5{
+    color: #000000;
+    font-family: "astra-reg";
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+.item-news-1, .item-news-2 {
+    margin-bottom: 50px;
+}
+.date {
+    display: flex;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+.date span {
+    color: #7b7b7b;
+    margin-right: 7px;
+}
+.date p {
+    color: #7b7b7b;
+}
+.img-text p{
+    width: 187px;
+    height: 36px;
+    color: #000000;
+    font-family: "astra-reg";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.content__sidebar-news a {
+    width: 85px;
+    height: 15px;
+    color: #cc3333;
+    font-family: "PT Astra Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: underline;
+}
+
+
+/* ************************************ CONTENT BANNER ***************************** */
+.content__items {
+    margin-left: 35px;
+   
+} 
+.content__banner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 85px;
+    position: relative;
+    width: 839px;
+    height: 356px;
+    border: 1px solid #908d8d;
+    background: url(images/Векторный_смарт-объект.png) no-repeat;
+    background-position:  right;
+}
+.content-left-text h2{
+    color: #000000;
+    font-family: 'adver-reg';
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 55px;
+    padding-left: 55px;
+}
+.content-left-text p{
+    width: 360px;
+    height: 15px;
+    color: #000000;
+    font-family: 'adver-reg';
+    font-style: italic;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 55px;
+    margin-bottom: 20px;
+}
+.content-right-text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.content-right-text p{
+    margin-top: 32px;
+    margin-left: 85px;
+    margin-bottom: 200px;
+    font-family: 'adver-reg';
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.content-right-text button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 237px;
+    height: 53px;
+    background-color: #000000;
+    color: #fffefe;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "astra-reg";
+    margin-right: 31px;
+}
+/* ************************************************** ABOUT *********************************** */
+.about__journal {
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+.about__journal h3 {
+    margin-bottom: 60px;
+    color: #cc3333;
+    font-family: "astra-reg";
+    font-size: 35px;
+    font-weight: 700;
+}
+.about__journal p {
+    font-size: 17px;
+    font-family: "astra-reg";
+    font-weight: 600;
+    line-height: 25px;
+}
+.about__journal p span {
+    font-style: italic;
+    font-weight: 400;
+    font-family: "astra-reg";
+    color: #4c4c4c;
+}
+.parts__journal {
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+.parts__journal h3 {
+    margin-bottom: 60px;
+    color: #cc3333;
+    font-family: "astra-reg";
+    font-size: 32px;
+    font-weight: 700;
+}
+.parts__journal h5 {
+    font-size: 23px;
+}
+.parts__journal p {
+    font-size: 17px;
+    font-family: "astra-reg";
+    font-weight: 400;
+    line-height: 25px;
+}
+.parts__journal p span {
+    font-style: italic;
+    font-weight: 400;
+    font-family: "astra-reg";
+}
+
+.for__whom {
+    margin-left: 25px;
+    margin-bottom: 120px;
+}
+.for__whom h3 {
+    margin-bottom: 60px;
+    color: #cc3333;
+    font-family: "astra-reg";
+    font-size: 32px;
+    font-weight: 700;
+}
+.for__whom p {
+    font-size: 17px;
+    font-family: "astra-reg";
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
